@@ -35217,12 +35217,12 @@ target: "region";
                rel1 {
                   to: "base";
                   relative: 0.1 0.1;
-                  offset: 4   0;
+                  offset: 4   -2;
                }
                rel2 {
                   to: "base";
                   relative: 0.9 0.9;
-                  offset: -3  -13;
+                  offset: -3  -16;
                }
             }
          }
@@ -35285,10 +35285,10 @@ target: "region";
             description {
                state: "default" 0.0;
                rel1 {
-                  offset: 2 -14;
+                  offset: 2 -18;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -6;
+               rel2.offset: -2 -8;
                color3: 20 20 20 60;
                color: 255 255 255 255;
                text {
@@ -35303,10 +35303,10 @@ target: "region";
                state: "selected" 0.0;
 	       inherit: "default" 0.0;
                rel1 {
-                  offset: 2 -14;
+                  offset: 2 -18;
                   relative: 0.0 1.0;
                }
-               rel2.offset: -2 -6;
+               rel2.offset: -2 -8;
                color: 250 250 250 255;
                color3: 20 20 20 40;
             }
