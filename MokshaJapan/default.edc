@@ -40431,6 +40431,7 @@ target: "region";
       parts {
          part { name: "e.text.label"; type: TEXT;
             effect: SOFT_SHADOW;
+            scale: 1;
             mouse_events: 0;
             description { state: "default" 0.0;
                rel1 {
@@ -40443,7 +40444,7 @@ target: "region";
                color3: 0 0 0 24;
                text {
                   font: "Sans";
-                  size: 9;
+                  size: 10;
                   min: 0 1;
                   text_class: "module_small";
                }
