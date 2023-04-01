@@ -7686,19 +7686,20 @@ group {
          part {
             name: "e.swallow.content";
             type: SWALLOW;
-            description {
-               state: "default" 0.0;
-               rel1 {
-                  relative: 0.0 0.0;
-                  offset: 0 0;
+            description { state: "default" 0.0;
+               rel1.relative: 0.0 0.0;
+               rel1.offset: 3 3;
+               rel2.relative: 1.0 1.0;
+               rel2.offset: -4 -4;
                }
-               rel2 {
-                  relative: 1.0 1.0;
-                  offset: 0 0;
+            description { state: "vert" 0.0;
+               rel1.relative: 0.0 0.0;
+               rel1.offset: 3 3;
+               rel2.relative: 1.0 1.0;
+               rel2.offset: -4 -4;
                }
             }
          }
-      }
       programs {
          // tell us what oriantation we are in. not used here
          //      program { name: "xx";
