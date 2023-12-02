@@ -23989,6 +23989,21 @@ target: "region";
                image.normal: "check_base.png";
             }
          }
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset: -5 -3;
+               rel2.offset:  5  0;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part {
             name: "mark";
             mouse_events: 0;
@@ -24126,7 +24141,19 @@ target: "region";
             target: "event";
             target: "e.text.label";
          }
-      }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
+         }
+       }
    }
    group {
       name: "e/widgets/check_icon";
@@ -24365,6 +24392,21 @@ target: "region";
          image: "radio_sel.png" COMP;
       }
       parts {
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset: -5 -3;
+               rel2.offset:  5  0;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part {
             name: "base";
             mouse_events: 0;
@@ -24522,6 +24564,18 @@ target: "region";
             target: "event";
             target: "e.text.label";
          }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
+         }
       }
    }
    group {
@@ -24532,6 +24586,21 @@ target: "region";
          image: "radio_sel.png" COMP;
       }
       parts {
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset: -5 -3;
+               rel2.offset:  5  0;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part {
             name: "base";
             mouse_events: 0;
@@ -24749,6 +24818,18 @@ target: "region";
             target: "event";
             target: "e.text.label";
          }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
+         }
       }
    }
    group {
@@ -24786,6 +24867,21 @@ target: "region";
                   normal: "bt_dis_base.png";
                   border: 4 4 4 4;
                }
+            }
+         }
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset:  -2 -2;
+               rel2.offset:   2  2;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
             }
          }
          part {
@@ -25018,6 +25114,18 @@ target: "region";
             target: "over1";
             target: "e.text.label";
             target: "disabler";
+         }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
          }
       }
    }
@@ -27427,6 +27535,21 @@ target: "region";
          image: "inset_sunk.png" COMP;
       }
       parts {
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset: -5 0;
+               rel2.offset:  5 0;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part {
             name: "base";
             type: RECT;
@@ -27719,6 +27842,18 @@ target: "region";
             target: "clip";
             target: "event";
          }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
+         }
       }
    }
    group {
@@ -27730,6 +27865,21 @@ target: "region";
          image: "inset_sunk.png" COMP;
       }
       parts {
+         part { name: "focus";
+            description { state: "default" 0.0;
+               rel1.offset: -5 -3;
+               rel2.offset:  5  0;
+               color: 255 255 255 192;
+               image.normal: "inset_raised.png";
+               image.border: 9 9 9 9;
+               visible: 0;
+               offscale;
+            }
+            description { state: "focused" 0.0;
+               inherit: "default" 0.0;
+               visible: 1;
+            }
+         }
          part {
             name: "base";
             type: RECT;
@@ -28022,6 +28172,18 @@ target: "region";
             action: STATE_SET "default" 0.0;
             target: "clip";
             target: "event";
+         }
+         program {
+            name: "focus_in";
+            signal: "e,state,focused"; source: "e";
+            action: STATE_SET "focused" 0.0;
+            target: "focus";
+         }
+         program {
+            name: "focus_out";
+            signal: "e,state,unfocused"; source: "e";
+            action: STATE_SET "default" 0.0;
+            target: "focus";
          }
       }
    }
