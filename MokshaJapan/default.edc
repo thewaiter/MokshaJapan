@@ -24861,6 +24861,11 @@ target: "region";
                image.normal: "bt_base1.png";
             }
             description {
+               state: "focused" 0.0;
+               inherit: "default" 0.0;
+               color: 255 255 255 128;
+            }
+            description {
                state: "disabled" 0.0;
                inherit: "default" 0.0;
                image {
@@ -25119,13 +25124,13 @@ target: "region";
             name: "focus_in";
             signal: "e,state,focused"; source: "e";
             action: STATE_SET "focused" 0.0;
-            target: "focus";
+            target: "button_image";
          }
          program {
             name: "focus_out";
             signal: "e,state,unfocused"; source: "e";
             action: STATE_SET "default" 0.0;
-            target: "focus";
+            target: "button_image";
          }
       }
    }
