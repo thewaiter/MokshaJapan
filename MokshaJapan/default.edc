@@ -7953,7 +7953,21 @@ script {										\
    group {
       name: "e/shelf/invisible/base";
       data.item: "shaped" "1";
+      SIZE_SCRIPT
       parts {
+         part {
+            name: "spacer";
+            type: SPACER;
+            description {
+               state: "default" 0.0;
+               rel1.offset: 12 12;
+               rel2.offset: -12 -12;
+            }
+            description {
+               state: "vert" 0.0;
+               inherit: "default";
+            }
+         }
          part {
             name: "e.swallow.content";
             type: SWALLOW;
@@ -7967,6 +7981,7 @@ script {										\
                   relative: 1.0 1.0;
                   offset: -1 -1;
                }
+               rel.to: "spacer";
             }
          }
       }
