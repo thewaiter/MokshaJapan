@@ -7702,16 +7702,16 @@ script {										\
             description { state: "default" 0.0;
                rel1.relative: 0.0 0.0;
                rel.to: "spacer";
-               rel1.offset: 0 0;
+               rel1.offset: 2 3;
                rel2.relative: 1.0 1.0;
-               rel2.offset: -1 -1;
+               rel2.offset: -2 -3;
                }
             description { state: "vert" 0.0;
                rel1.relative: 0.0 0.0;
                rel.to: "spacer";
-               rel1.offset: 0 0;
+               rel1.offset: 2 3;
                rel2.relative: 1.0 1.0;
-               rel2.offset: -1 -1;
+               rel2.offset: -2 -3;
                }
             }
          }
