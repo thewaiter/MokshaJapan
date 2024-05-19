@@ -1139,7 +1139,7 @@ group {
                   to_x: "e.text.title";
                   to_y: "title_back";
                   relative: 1.0 1.0;
-                  offset: 0 0;
+                  offset: 0 -3;
                }
                color_class: "border_title_active";
                text {
