@@ -7437,7 +7437,6 @@ group {
          part {
             name: "base";
             mouse_events: 0;
-            scale: 1;
             description {
                state: "default" 0.0;
                min: 16 16;
@@ -7489,22 +7488,22 @@ group {
          }
       }
       programs {
-         program {
-            name: "sel";
-            /* on selection of the menu item */
-            signal: "e,state,selected";
-            source: "e";
-            action: STATE_SET "selected" 0.0;
-            target: "mark";
-         }
-         program {
-            name: "unsel";
-            /* de-select */
-            signal: "e,state,unselected";
-            source: "e";
-            action: STATE_SET "default" 0.0;
-            target: "mark";
-         }
+         //~ program {
+            //~ name: "sel";
+            //~ /* on selection of the menu item */
+            //~ signal: "e,state,selected";
+            //~ source: "e";
+            //~ action: STATE_SET "selected" 0.0;
+            //~ target: "mark";
+         //~ }
+         //~ program {
+            //~ name: "unsel";
+            //~ /* de-select */
+            //~ signal: "e,state,unselected";
+            //~ source: "e";
+            //~ action: STATE_SET "default" 0.0;
+            //~ target: "mark";
+         //~ }
          program {
             name: "on";
             /* if the checkmark is to be displayed */
