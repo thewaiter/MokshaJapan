@@ -841,14 +841,14 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_close";
                   /* left of the close button */
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_close";
                   /* left of the close button */
                   to_y: "top";
@@ -869,14 +869,14 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_max";
                   /* left of the maximize button */
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_max";
                   /* left of the maximize button */
                   to_y: "top";
@@ -1993,16 +1993,16 @@ group {
                aspect: 1.0 1.0;
                aspect_preference: VERTICAL;
                rel1 {
-                  relative: 0.0 0.0;
-                  offset: 25 1;
-                  to_x: "top";
+                  relative: 1.0 0.0;
+                  offset: 7 1;
+                  to_x: "bt_close";
                   /* left of the close button */
                   to_y: "top";
                }
                rel2 {
-                  relative: 0.0 1.0;
-                  offset: 25 -2;
-                  to_x: "top";
+                  relative: 1.0 1.0;
+                  offset: 7 -2;
+                  to_x: "bt_close";
                   /* left of the close button */
                   to_y: "top";
                }
@@ -2022,15 +2022,15 @@ group {
                color: 0 0 255 255;
                aspect_preference: VERTICAL;
                rel1 {
-                  relative: 0.0 0.0;
-                  offset: 25 1;
+                  relative: 1.0 0.0;
+                  offset: 7 1;
                   to_x: "bt_max";
                   /* left of the maximize button */
                   to_y: "top";
                }
                rel2 {
-                  relative: 0.0 1.0;
-                  offset: 25 -2;
+                  relative: 1.0 1.0;
+                  offset: 7 -2;
                   to_x: "bt_max";
                   /* left of the maximize button */
                   to_y: "top";
@@ -2491,13 +2491,13 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_close";
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_close";
                   to_y: "top";
                }
@@ -2516,13 +2516,13 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_max";
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_max";
                   to_y: "top";
                }
@@ -3635,13 +3635,13 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_close";
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_close";
                   to_y: "top";
                }
@@ -3660,13 +3660,13 @@ group {
                aspect_preference: VERTICAL;
                rel1 {
                   relative: 0.0 0.0;
-                  offset: -2 1;
+                  offset: -10 1;
                   to_x: "bt_max";
                   to_y: "top";
                }
                rel2 {
                   relative: 0.0 1.0;
-                  offset: -2 -2;
+                  offset: -10 -2;
                   to_x: "bt_max";
                   to_y: "top";
                }
