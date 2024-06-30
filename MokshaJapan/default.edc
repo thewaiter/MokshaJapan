@@ -21227,7 +21227,7 @@ target: "region";
                text {
                   font: "Sans";
                   size: 10;
-                  min: 1 1;
+                  min: 0 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
                }
@@ -21806,7 +21806,7 @@ target: "region";
                text {
                   font: "Sans";
                   size: 10;
-                  min: 1 1;
+                  min: 0 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
                }
@@ -22387,7 +22387,7 @@ target: "region";
                text {
                   font: "Sans";
                   size: 10;
-                  min: 1 1;
+                  min: 0 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
                }
@@ -22967,7 +22967,7 @@ target: "region";
                text {
                   font: "Sans";
                   size: 10;
-                  min: 1 1;
+                  min: 0 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
                }
