@@ -26761,7 +26761,7 @@ target: "region";
                color_class: "ilist_item_header";
                text {
                   font: "Sans:style=Bold";
-                  size: 16;
+                  size: 12;
                   min: 1 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
@@ -26941,7 +26941,7 @@ target: "region";
                color_class: "ilist_item_header_odd";
                text {
                   font: "Sans:style=Bold";
-                  size: 16;
+                  size: 12;
                   min: 1 1;
                   align: 0.0 0.5;
                   text_class: "ilist_item";
