@@ -9062,37 +9062,34 @@ CONNMAN_ICON(ethernet)
                color: 255 255 0 150;
             }
          }
-         part {
-            name: "e.swallow.check";
-            type: SWALLOW;
-            description {
-               state: "default" 0.0;
+         part { name: "e.box"; type: BOX;
+            description { state: "default" 0.0;
                rel1 {
                   relative: 1 1;
-                  offset: 5 4;
-                  to_x: "e.swallow.background";
+                  offset: 50 4;
+                  to_x: "e.edge.bottom_right";
                   to_y: "e.text.description";
                }
                rel2 {
-                  relative: 1 1;
-                  offset: -5 24;
+                  offset: -50 24;
                   to_y: "e.text.description";
                }
+               box { layout: "horizontal";
+                  padding: 0 0;
+                  align: 0.5 0.5;
+                  min: 0 1;
+              }
             }
          }
-         part {
-            name: "e.swallow.slider";
-            type: SWALLOW;
-            description {
-               state: "default" 0.0;
+         part { name: "e.swallow.slider"; type: SWALLOW;
+            description { state: "default" 0.0;
                rel1 {
                   relative: 1 1;
                   offset: 5 1;
                   to_x: "e.edge.bottom_right";
-                  to_y: "e.swallow.check";
+                  to_y: "e.box";
                }
                rel2 {
-                  relative: 1 1;
                   offset: -5 -1;
                }
             }
