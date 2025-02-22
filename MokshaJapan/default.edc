@@ -46,7 +46,7 @@ data {
 	item: "theme/version"	"0.1.1";
 	item: "theme/author"	"Bodhi Team";
 	item: "theme/license"	"BSD Artistic License";
-	item: "gtk-theme"		"MokshaJapan-GTK";
+	item: "gtk-theme"		"MokshaJapan";
 	item: "icon-theme"		"MokshaJapan";
 	item: "version"			"110";
 }
